@@ -533,13 +533,14 @@ for (let i = 0; i<setting.height; i++) {
         let div = document.createElement('article');
         div.classList.add('hide');
         let element = cards[Math.floor(Math.random() * cards.length)];
-        div.innerHTML = $ (lement.element);
+        div.innerHTML = element.element;
         grid.appendChild(div);
     }
 }
 
-for (i=0; i, document.getElementsByTagName('article').length; i++){
-    document.getElementsByTagName('article')[i].onclick = function(event) {
+for (let i=0; document.getElementsByTagName('article').length; i++){
+    const cardHtml =  document.getElementsByTagName('article')[i];
+    cardHtml.onclick = function(event) {
         event.preventDefault;
         if(last !== document.getElementsByTagName('article')[i].getElementsByTagName('div')[0].classList.value) {
             setTimeout(function(){
@@ -548,4 +549,5 @@ for (i=0; i, document.getElementsByTagName('article').length; i++){
         }
         last = document.getElementsByTagName('article')[i].getElementsByTagName('div')[0].classList.value;
     }
+    console.log(document.getElementsByTagName('article'))
 }
