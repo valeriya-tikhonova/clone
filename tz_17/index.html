@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tz-17</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+    body {
+        font-family: 'Oswald', sans-serif;
+        margin: 0 auto;
+        min-width: 16rem;
+        max-width: 96rem;
+        -webkit-text-size-adjust: 100%;
+        height: 100%;
+    }
+
+    h1 {
+        text-align: center
+    }
+
+    .container {
+            padding: 25px;
+    }
+
+    </style>
+<body>
+    <div class="container">
+        <h1>Техническое задание №17</h1>
+
+        <div>
+            <h4>Задача №1 Создайте функцию, которая возвращает ваше имя. Имя вводится с input</h4>
+            <p>Введите ваше имя:</p>
+            <input id="name" type="text">
+            <input id="return" type="button" value="Вернуть имя">
+            <p id="zadacha1"></p>
+        </div>
+    
+        <div>
+            <h4>Задача №2 Создайте функцию, которая принимает 2 числа и возвращает большее число из двух, либо любое из них если они равны.</h4>
+            <p>Введите первое число:</p>
+            <input id="value1" type="text">
+            <p>Введите второе число:</p>
+            <input id="value2" type="text">
+            <input id="sravnit" type="button" value="Сравнить">
+            <p id="zadacha2"></p>
+        </div>
+    
+        <div>
+            <h4>Задача №3 Создайте функцию, которая возвращает случайное число в указанном диапазоне. Диапазон указывает пользователь с помощью двух переменных, которые передаются функции в качестве параметров.</h4>
+            <p>Введите первое число:</p>
+            <input id="start" type="text">
+            <p>Введите второе число:</p>
+            <input id="end" type="text">
+            <input id="generete" type="button" value="Вернуть случайное число">
+            <p id="zadacha3"></p>
+        </div>
+        <script src="script.js"></script>
+    </div>
+</body>
+</html>
